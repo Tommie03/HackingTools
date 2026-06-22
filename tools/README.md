@@ -1,12 +1,11 @@
-# htb-toolkit
+# HackingTools
 
-My personal HTB/pentest arsenal — a catalog of tools I actually use, organized
+My personal pentest arsenal — a catalog of tools I actually use, organized
 so I can scan for "what do I reach for here" instead of googling it again,
 plus a script that gets a fresh box (Pwnbox, Kali, whatever) fully tooled in
 one command.
 
-This repo does **not** store tool source/binaries — Pwnbox resets every
-session, so committing tool code would just rot. Instead the repo holds:
+This repo does **not** store tool source/binaries. Instead the repo holds:
 
 - **Markdown catalogs** (`windows/`, `linux/`, `recon/`, `pivoting/`) — one
   page per category, listing each tool, what it's for, and the command I
@@ -16,15 +15,15 @@ session, so committing tool code would just rot. Instead the repo holds:
 - **`bootstrap.sh`** — the one-liner. Clones this repo (or updates it),
   then runs the installer.
 
-Wordlists aren't in here — `apt install seclists` covers that.
+Wordlists aren't in here. Use Seclist.
 
-## Quick start (run on a fresh Pwnbox / new box — the attack host is always Linux)
+## Quick start
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/YOURUSERNAME/htb-toolkit/main/bootstrap.sh)
 ```
 
-Clones this repo to `~/htb-toolkit`, pulls every tool (Linux *and* the
+Clones this repo to `~/HackingTools`, pulls every tool (Linux *and* the
 Windows binaries you'd upload to a target — SharpCollection, Rubeus,
 mimikatz, etc.) into `~/tools`, and adds `~/tools/bin` to PATH. Idempotent —
 re-run any time, existing tools just get `git pull`'d instead of re-cloned.
@@ -32,7 +31,7 @@ re-run any time, existing tools just get `git pull`'d instead of re-cloned.
 To just browse the catalog without installing anything:
 
 ```bash
-git clone https://github.com/YOURUSERNAME/htb-toolkit.git
+git clone https://github.com/YOURUSERNAME/HackingTools.git
 ```
 
 ## Structure
@@ -62,11 +61,3 @@ Found a new tool worth keeping? Add a line to the relevant `.md` file —
 that's it, no install logic needed there. Only add to
 `scripts/install-tools.sh` if it's something you want auto-fetched on every
 new box.
-
-## A note on scope
-
-This repo is just *links + commands for public, well-known tools* — nothing
-here is target-specific. Keep actual machine notes, loot, and creds in a
-**separate private repo or a gitignored local folder**, never in this one.
-HTB's rules don't allow publishing flags or detailed box writeups, and it's
-an easy mistake to commit a notes file with live creds in it.
