@@ -20,7 +20,7 @@ Wordlists aren't in here. Use Seclist.
 ## Quick start
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Tommie03/HackingTools/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Tommie03/HackingTools/main/tools/bootstrap.sh)
 ```
 
 Clones this repo to `~/HackingTools`, pulls every tool (Linux *and* the
