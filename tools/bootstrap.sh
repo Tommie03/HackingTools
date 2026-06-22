@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL="https://github.com/YOURUSERNAME/HackingTools.git"
+REPO_URL="https://github.com/Tommie03/HackingTools.git"
 REPO_DIR="${HTB_TOOLKIT_DIR:-$HOME/HackingTools}"
 
 if [ -d "$REPO_DIR/.git" ]; then
