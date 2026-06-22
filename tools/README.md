@@ -20,7 +20,7 @@ Wordlists aren't in here. Use Seclist.
 ## Quick start
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/YOURUSERNAME/htb-toolkit/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Tommie03/HackingTools/main/bootstrap.sh)
 ```
 
 Clones this repo to `~/HackingTools`, pulls every tool (Linux *and* the
@@ -31,7 +31,7 @@ re-run any time, existing tools just get `git pull`'d instead of re-cloned.
 To just browse the catalog without installing anything:
 
 ```bash
-git clone https://github.com/YOURUSERNAME/HackingTools.git
+git clone https://github.com/Tommie03/HackingTools.git
 ```
 
 ## Structure
