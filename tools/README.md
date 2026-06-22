@@ -37,7 +37,7 @@ git clone https://github.com/YOURUSERNAME/HackingTools.git
 ## Structure
 
 ```
-htb-toolkit/
+HackingTools/
 ├── bootstrap.sh               # one-liner entry point (run on the Linux attack host)
 ├── windows/
 │   ├── ad-enum.md            # BloodHound, bloodyAD, PowerView, ADRecon...
